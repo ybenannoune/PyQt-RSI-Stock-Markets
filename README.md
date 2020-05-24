@@ -2,11 +2,10 @@
 
 Set your api key : quandl.ApiConfig.api_key (in pyqt.py)
 
-run pyqt.py
+## run pyqt.py
 
 
-
-##Requires
+# Requires
 
 * pyqt5
 * quandl
