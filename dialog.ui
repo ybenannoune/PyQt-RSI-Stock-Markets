@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1336</width>
+    <height>824</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyQt</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1321</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="basicAnalysis">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QLineEdit" name="percentageValue">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>550</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.9</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listCompany">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>191</width>
+       <height>711</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnApply">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>610</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Appliquer</string>
+     </property>
+    </widget> 
+    <widget class="QComboBox" name="cmbColName">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>520</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Open</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>High</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Low</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Last</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>550</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Points en dessous de (%) :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDownloadAll">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>730</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Télécharge toute la liste</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>490</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="dateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2016</year>
+       <month>10</month>
+       <day>6</day>
+      </datetime>
+     </property>
+     <property name="maximumDateTime">
+      <datetime>
+       <hour>23</hour>
+       <minute>59</minute>
+       <second>59</second>
+       <year>9999</year>
+       <month>12</month>
+       <day>31</day>
+      </datetime>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="date">
+      <date>
+       <year>2016</year>
+       <month>10</month>
+       <day>6</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>520</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Données à traiter :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>490</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date de début</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>1081</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="browserLay"/>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>580</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>[(J-1) - J] &lt; X% * J  , [X] = </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="absoluteDeltaPercentage">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>580</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.01</string>
+     </property>
+    </widget>  
+   </widget>  
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
